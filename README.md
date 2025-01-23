@@ -159,3 +159,26 @@ const formattedAmount3 = formatCurrency(amount3);
 // Output: "$2,500.00" (Formatted currency for USD in the default en-US locale)
 console.log(formattedAmount3);
 ```
+
+### getQueryParams
+
+```typescript
+import { getQueryParams } from "helper-box";
+
+import { getQueryParams } from "helper-box";
+
+// Example URL
+const url1 = "https://example.com/?name=Alice&age=25&country=USA";
+
+// Get query parameters from the URL
+const params1 = getQueryParams(url1);
+console.log(params1);
+// Output: { name: "Alice", age: "25", country: "USA" }
+
+const url2 = "https://example.com/?search=book&page=2&sort=asc";
+
+// Get query parameters from the URL
+const params2 = getQueryParams(url2);
+console.log(params2);
+// Output: { search: "book", page: "2", sort: "asc" }
+```
