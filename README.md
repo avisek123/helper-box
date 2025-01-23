@@ -138,3 +138,24 @@ const objectDiff = difference(user1, user2);
 console.log(objectDiff);
 // Output: { email: "alice@example.com" } (Keys in user1 not in user2)
 ```
+
+### formatCurrency
+
+```typescript
+import { formatCurrency } from "helper-box";
+
+const amount1 = 1000;
+const formattedAmount1 = formatCurrency(amount1, "en-US", "USD");
+console.log(formattedAmount1);
+// Output: "$1,000.00" (Formatted currency for USD in en-US locale)
+
+const amount2 = 1500;
+const formattedAmount2 = formatCurrency(amount2, "de-DE", "EUR");
+console.log(formattedAmount2);
+// Output: "1.500,00 €" (Formatted currency for EUR in de-DE locale)
+
+const amount3 = 2500;
+const formattedAmount3 = formatCurrency(amount3);
+// Output: "$2,500.00" (Formatted currency for USD in the default en-US locale)
+console.log(formattedAmount3);
+```
