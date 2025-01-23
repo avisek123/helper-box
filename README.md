@@ -82,3 +82,21 @@ console.log(usersObject);
 //   "3": { id: 3, name: "Charlie", age: 35 }
 // }
 ```
+
+### omitKeys
+
+```typescript
+import { omitKeys } from "helper-box";
+
+const user: User = {
+  id: 1,
+  name: "Alice",
+  age: 25,
+  email: "alice@example.com",
+};
+
+// Omit 'email' and 'age' keys from the user object
+const userWithoutEmailAndAge = omitKeys(user, ["email", "age"]);
+console.log(userWithoutEmailAndAge);
+// Output: { id: 1, name: "Alice" }
+```
