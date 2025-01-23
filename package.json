@@ -1,20 +1,35 @@
 {
-  "name": "helperbox",
+  "name": "helper-box",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "A set of js core utility functions",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "test": "jest",
-    "start": "ts-node index.ts"
+    "start": "node .",
+    "build": "tsc"
   },
-  "keywords": [],
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/avisek123/helper-box"
+  },
+  "keywords": [
+    "js",
+    "javascript",
+    "ts",
+    "utility",
+    "helper",
+    "functions"
+  ],
+  "author": "avisek",
   "license": "ISC",
+  "homepage": "",
   "devDependencies": {
     "@types/jest": "^29.5.14",
     "jest": "^29.7.0",
     "ts-jest": "^29.2.5",
-    "ts-node": "^10.9.2",
     "typescript": "^5.7.3"
   }
 }
