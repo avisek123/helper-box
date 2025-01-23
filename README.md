@@ -24,7 +24,7 @@
 
 ## API
 
-All the available utility function inside `helper-box`
+Here are some of the utility functions available in this library: `helper-box`
 
 | Name                   | Description                                               |
 | ---------------------- | --------------------------------------------------------- |
