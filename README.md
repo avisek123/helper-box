@@ -34,3 +34,29 @@ All the available utility function inside `helper-box`
 | **`difference`**       | Find the difference between arrays, strings, or objects.  |
 | **`formatCurrency`**   | Convert any number to a formatted currency.               |
 | **`getQueryParams`**   | Parse query parameters from a URL into an object.         |
+
+## Examples
+
+### removeDuplicates
+
+```typescript
+import { removeDuplicates } from "helper-box";
+
+// Array Example
+const numbersArray = [1, 2, 2, 3, 4, 4, 5];
+const uniqueNumbers = removeDuplicates(numbersArray);
+console.log(uniqueNumbers);
+// Output: [1, 2, 3, 4, 5]
+
+// String Example
+const text = "aabbccddeeff";
+const uniqueText = removeDuplicates(text);
+console.log(uniqueText);
+// Output: "abcdef"
+
+// Object Example
+const object = { a: 1, b: 2, c: 2, d: 3 };
+const uniqueObject = removeDuplicates(object);
+console.log(uniqueObject);
+// Output: { a: 1, b: 2, c: 2, d: 3 } (No real duplication removed in this shallow example)
+```
