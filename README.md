@@ -100,3 +100,41 @@ const userWithoutEmailAndAge = omitKeys(user, ["email", "age"]);
 console.log(userWithoutEmailAndAge);
 // Output: { id: 1, name: "Alice" }
 ```
+
+### difference
+
+```typescript
+import { difference } from "helper-box";
+
+const array1 = [1, 2, 3, 4, 5];
+const array2 = [4, 5, 6, 7];
+
+// Get the difference between array1 and array2
+const arrayDiff = difference(array1, array2);
+console.log(arrayDiff);
+// Output: [1, 2, 3] (Items from array1 not in array2)
+
+const string1 = "hello";
+const string2 = "world";
+
+// Get the difference between string1 and string2
+const stringDiff = difference(string1, string2);
+console.log(stringDiff);
+// Output: "he" (Characters in string1 not in string2)
+
+const user1 = {
+  id: 1,
+  name: "Alice",
+  email: "alice@example.com",
+};
+
+const user2 = {
+  id: 1,
+  name: "Alice",
+};
+
+// Get the difference between user1 and user2
+const objectDiff = difference(user1, user2);
+console.log(objectDiff);
+// Output: { email: "alice@example.com" } (Keys in user1 not in user2)
+```
