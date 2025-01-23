@@ -1,6 +1,6 @@
 <div align="center">
   <h1>
-    <code>helper-box </code> 
+    <code>helper-box</code> 
   </h1>
 
   <div>A versatile library of utility functions, ready to use in both JavaScript and TypeScript projects..</div>
