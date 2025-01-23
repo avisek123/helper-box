@@ -1,6 +1,6 @@
 {
   "name": "helper-box",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A set of js/ts core utility functions",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
