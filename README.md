@@ -32,6 +32,5 @@ All the available utility function inside `@ashirbad/js-core`
 | **`arrayToObject`**    | Convert an array into an object using a specified key.    |
 | **`omitKeys`**         | Omit specified keys from an object.                       |
 | **`difference`**       | Find the difference between arrays, strings, or objects.  |
-|  |
 | **`formatCurrency`**   | Convert any number to a formatted currency.               |
 | **`getQueryParams`**   | Parse query parameters from a URL into an object.         |
