@@ -24,7 +24,7 @@
 
 ## API
 
-All the available utility function inside `@ashirbad/js-core`
+All the available utility function inside `helper-box`
 
 | Name                   | Description                                               |
 | ---------------------- | --------------------------------------------------------- |
