@@ -26,12 +26,12 @@
 
 All the available utility function inside `@ashirbad/js-core`
 
-| Name                   | Description                                               | More |
-| ---------------------- | --------------------------------------------------------- | ---- |
-| **`removeDuplicates`** | Remove duplicate values from an array, string, or object. |      |
-| **`arrayToObject`**    | Convert an array into an object using a specified key.    |      |
-| **`omitKeys`**         | Omit specified keys from an object.                       |      |
-| **`difference`**       | Find the difference between arrays, strings, or objects.  |      |
-| **`getFutureDays`**    | Get future 7 days.                                        |      |
-| **`formatCurrency`**   | Convert any number to a formatted currency.               |      |
-| **`getQueryParams`**   | Parse query parameters from a URL into an object.         |      |
+| Name                   | Description                                               |
+| ---------------------- | --------------------------------------------------------- |
+| **`removeDuplicates`** | Remove duplicate values from an array, string, or object. |
+| **`arrayToObject`**    | Convert an array into an object using a specified key.    |
+| **`omitKeys`**         | Omit specified keys from an object.                       |
+| **`difference`**       | Find the difference between arrays, strings, or objects.  |
+| **`getFutureDays`**    | Get future 7 days.                                        |
+| **`formatCurrency`**   | Convert any number to a formatted currency.               |
+| **`getQueryParams`**   | Parse query parameters from a URL into an object.         |
