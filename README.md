@@ -182,3 +182,17 @@ const params2 = getQueryParams(url2);
 console.log(params2);
 // Output: { search: "book", page: "2", sort: "asc" }
 ```
+
+## 🤔 How to contribute
+
+Have an idea? Found a bug? Please raise to [ISSUES](https://github.com/avisek123/helper-box/issues).
+Contributions are welcome and are greatly appreciated! Every little bit helps, and credit will always be given.
+
+## 💖 Support my projects
+
+I open-source almost everything I can, and I try to reply everyone needing help using these projects. Obviously, this takes time. You can integrate and use these projects in your applications for free! You can even change the source code and redistribute (even resell it).
+
+However, if you get some profit from this or just want to encourage me to continue creating stuff, there are few ways you can do it:
+
+- Starring and sharing the projects you like 🚀
+- If you're feeling especially charitable, please follow [avisek123](https://github.com/avisek123) on GitHub.
