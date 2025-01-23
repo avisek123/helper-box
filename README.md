@@ -60,3 +60,25 @@ const uniqueObject = removeDuplicates(object);
 console.log(uniqueObject);
 // Output: { a: 1, b: 2, d: 3 }
 ```
+
+### arrayToObject
+
+```typescript
+import { arrayToObject } from "helper-box";
+
+const users = [
+  { id: 1, name: "Alice", age: 25 },
+  { id: 2, name: "Bob", age: 30 },
+  { id: 3, name: "Charlie", age: 35 },
+];
+
+const usersObject = arrayToObject(users);
+
+console.log(usersObject);
+// Output:
+// {
+//   "1": { id: 1, name: "Alice", age: 25 },
+//   "2": { id: 2, name: "Bob", age: 30 },
+//   "3": { id: 3, name: "Charlie", age: 35 }
+// }
+```
