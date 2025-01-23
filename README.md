@@ -55,8 +55,8 @@ console.log(uniqueText);
 // Output: "abcdef"
 
 // Object Example
-const object = { a: 1, b: 2, c: 2, d: 3 };
+const object = { a: 1, b: 2, c: 2, d: 3, e: 1 };
 const uniqueObject = removeDuplicates(object);
 console.log(uniqueObject);
-// Output: { a: 1, b: 2, c: 2, d: 3 } (No real duplication removed in this shallow example)
+// Output: { a: 1, b: 2, d: 3 }
 ```
