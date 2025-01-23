@@ -25,7 +25,10 @@
   ],
   "author": "avisek",
   "license": "ISC",
-  "homepage": "",
+  "bugs": {
+    "url": "https://github.com/avisek123/helper-box/issues"
+  },
+  "homepage": "https://github.com/avisek123/helper-box/blob/main/README.md",
   "devDependencies": {
     "@types/jest": "^29.5.14",
     "jest": "^29.7.0",
