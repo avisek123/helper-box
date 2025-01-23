@@ -199,4 +199,5 @@ However, if you get some profit from this or just want to encourage me to contin
 
 ## About me
 
+A developer passionate about exploring and mastering new technologies.
 ![WhatsApp Image 2024-09-19 at 7 49 24 PM](https://github.com/user-attachments/assets/a6204283-d754-44c8-a1c7-2cb0dffcd316)
