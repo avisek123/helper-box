@@ -10,6 +10,10 @@ lerna-debug.log*
 # Diagnostic reports (https://nodejs.org/api/report.html)
 report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
 
+# Exclude Jest configuration and test folder
+jest.config.js
+__tests__/
+
 # Runtime data
 pids
 *.pid

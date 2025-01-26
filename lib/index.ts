@@ -196,16 +196,6 @@ export const arrSort = (
   };
 };
 
-// const users = [
-//     { name: 'Alice', age: 25 },
-//     { name: 'Bob', age: 30 },
-//     { name: 'Charlie', age: 20 }
-//   ];
-
-//   // Sort by 'name' in ascending order
-//   const sortedByNameAsc = users.sort(sort('name'));
-//   console.log(sortedByNameAsc);
-
 /**
  * Removes all keys with value null.
  * @param o
@@ -451,4 +441,37 @@ export const filterByValue = <T, K extends keyof T>(
   value: T[K]
 ): T[] => {
   return array.filter((item) => item[key] === value);
+};
+
+export const getFileExtension = (filename: string): string => {
+  const parts = filename.split(".");
+  return parts.length > 1 ? parts.pop()! : "";
+};
+
+export const validEmail = (email: string): boolean => {
+  const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+  return emailRegex.test(email);
+};
+
+/**
+ * Converts bytes to a human-readable format (e.g., KB, MB, GB).
+ *
+ * @param bytes - The number of bytes to format.
+ * @param decimals - The number of decimal places (default is 2).
+ * @returns A string with the formatted size and unit (e.g., "1.18 MB").
+ *
+ * @example
+ * formatBytes(1234567); // "1.18 MB"
+ * formatBytes(1024);    // "1 KB"
+ * formatBytes(0);       // "0 Bytes"
+ */
+export const formatBytes = (bytes: number, decimals: number = 2): string => {
+  if (bytes === 0) return "0 Bytes";
+
+  const k = 1024;
+  const dm = decimals < 0 ? 0 : decimals;
+  const sizes = ["Bytes", "KB", "MB", "GB", "TB", "PB", "EB", "ZB", "YB"];
+
+  const i = Math.floor(Math.log(bytes) / Math.log(k));
+  return parseFloat((bytes / Math.pow(k, i)).toFixed(dm)) + " " + sizes[i];
 };
