@@ -47,7 +47,6 @@ Here are some of the utility functions available in this library: `helper-box`
 | **`generateUUID	`**                     | Generates a universally unique identifier (UUID).                                      |
 | **`flattenDeep	`**                      | Recursively flattens a nested array into a single-level array.                         |
 | **`convertHtmlContentToPlainText	`**    | Converts HTML content to plain text by removing HTML tags.                             |
-|                                        |
 
 ## Examples
 
