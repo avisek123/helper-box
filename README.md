@@ -26,27 +26,28 @@
 
 Here are some of the utility functions available in this library: `helper-box`
 
-| Name                                   | Description                                                                            |
-| -------------------------------------- | -------------------------------------------------------------------------------------- |
-| **`removeDuplicates`**                 | Remove duplicate values from an array, string, or object.                              |
-| **`arrayToObject`**                    | Convert an array into an object using a specified key.                                 |
-| **`omitKeys`**                         | Omit specified keys from an object.                                                    |
-| **`difference`**                       | Find the difference between arrays, strings, or objects.                               |
-| **`formatCurrency`**                   | Convert any number to a formatted currency.                                            |
-| **`getQueryParams`**                   | Parse query parameters from a URL into an object.                                      |
-| **`cloneDeep`**                        | Deeply clones an object or array, creating a new instance with the same values.        |
-| **`isImageUrl`**                       | Checks if a URL points to an image based on its file extension.                        |
-| **`toCamelCase`**                      | Converts a string from kebab-case or snake_case to camelCase.                          |
-| **`objectToArray`**                    | Converts an object to an array of its key-value pairs.                                 |
-| **`getFileExtension`**                 | Extracts the file extension from a file path or URL.                                   |
-| **`validEmail`**                       | Validates if a given string is in a proper email format.                               |
-| **`formatBytes`**                      | Converts a number of bytes into a human-readable string with units (e.g., KB, MB, GB). |
-| **`isUrl`**                            | Checks if a given string is a valid URL.                                               |
-| **`convertValueToHoursMinutesFormat	`** | Converts a given value to hours and minutes format.                                    |
-| **`convertHoursToDaysHoursMinutes	`**   | Converts a value representing hours into days, hours, and minutes format.              |
-| **`generateUUID	`**                     | Generates a universally unique identifier (UUID).                                      |
-| **`flattenDeep	`**                      | Recursively flattens a nested array into a single-level array.                         |
-| **`convertHtmlContentToPlainText	`**    | Converts HTML content to plain text by removing HTML tags.                             |
+| Name                                   | Description                                                                                                                         |
+| -------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
+| **`removeDuplicates`**                 | Remove duplicate values from an array, string, or object.                                                                           |
+| **`arrayToObject`**                    | Convert an array into an object using a specified key.                                                                              |
+| **`omitKeys`**                         | Omit specified keys from an object.                                                                                                 |
+| **`difference`**                       | Find the difference between arrays, strings, or objects.                                                                            |
+| **`formatCurrency`**                   | Convert any number to a formatted currency.                                                                                         |
+| **`getQueryParams`**                   | Parse query parameters from a URL into an object.                                                                                   |
+| **`cloneDeep`**                        | Deeply clones an object or array, creating a new instance with the same values.                                                     |
+| **`isImageUrl`**                       | Checks if a URL points to an image based on its file extension.                                                                     |
+| **`toCamelCase`**                      | Converts a string from kebab-case or snake_case to camelCase.                                                                       |
+| **`objectToArray`**                    | Converts an object to an array of its key-value pairs.                                                                              |
+| **`getFileExtension`**                 | Extracts the file extension from a file path or URL.                                                                                |
+| **`validEmail`**                       | Validates if a given string is in a proper email format.                                                                            |
+| **`formatBytes`**                      | Converts a number of bytes into a human-readable string with units (e.g., KB, MB, GB).                                              |
+| **`isUrl`**                            | Checks if a given string is a valid URL.                                                                                            |
+| **`arrSort`**                          | Sorts an array of objects by a specific field in ascending ("asc") or descending ("desc") order, with optional data transformation. |
+| **`convertValueToHoursMinutesFormat	`** | Converts a given value to hours and minutes format.                                                                                 |
+| **`convertHoursToDaysHoursMinutes	`**   | Converts a value representing hours into days, hours, and minutes format.                                                           |
+| **`generateUUID	`**                     | Generates a universally unique identifier (UUID).                                                                                   |
+| **`flattenDeep	`**                      | Recursively flattens a nested array into a single-level array.                                                                      |
+| **`convertHtmlContentToPlainText	`**    | Converts HTML content to plain text by removing HTML tags.                                                                          |
 
 ## Examples
 

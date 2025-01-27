@@ -179,20 +179,22 @@ export const difference = <T>(value1: T, value2: T): T => {
  */
 export const arrSort = (
   field: string,
-  reverse: boolean = false,
-  primer: any = null
+  order: "asc" | "desc" = "asc",
+  primer: ((value: any) => any) | null = null
 ) => {
   const key = primer
-    ? function (x: { [key: string]: any }) {
-        return primer(x[field]);
-      }
-    : function (x: { [key: string]: any }) {
-        return x[field];
-      };
-  const reverseOrder = !reverse ? 1 : -1;
-  return function (a: any, b: any) {
-    // @ts-ignore
-    return (a = key(a)), (b = key(b)), reverseOrder * ((a > b) - (b > a));
+    ? (x: { [key: string]: any }) => primer(x[field])
+    : (x: { [key: string]: any }) => x[field];
+
+  const reverseOrder = order === "asc" ? 1 : -1;
+
+  return (a: any, b: any) => {
+    const aValue = key(a);
+    const bValue = key(b);
+
+    if (aValue > bValue) return reverseOrder * 1; // `true` is converted to `1`
+    if (aValue < bValue) return reverseOrder * -1; // `true` is converted to `-1`
+    return 0; // Equal values
   };
 };
 
