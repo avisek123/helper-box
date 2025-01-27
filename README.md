@@ -26,14 +26,20 @@
 
 Here are some of the utility functions available in this library: `helper-box`
 
-| Name                   | Description                                               |
-| ---------------------- | --------------------------------------------------------- |
-| **`removeDuplicates`** | Remove duplicate values from an array, string, or object. |
-| **`arrayToObject`**    | Convert an array into an object using a specified key.    |
-| **`omitKeys`**         | Omit specified keys from an object.                       |
-| **`difference`**       | Find the difference between arrays, strings, or objects.  |
-| **`formatCurrency`**   | Convert any number to a formatted currency.               |
-| **`getQueryParams`**   | Parse query parameters from a URL into an object.         |
+| Name                   | Description                                                                     |
+| ---------------------- | ------------------------------------------------------------------------------- |
+| **`removeDuplicates`** | Remove duplicate values from an array, string, or object.                       |
+| **`arrayToObject`**    | Convert an array into an object using a specified key.                          |
+| **`omitKeys`**         | Omit specified keys from an object.                                             |
+| **`difference`**       | Find the difference between arrays, strings, or objects.                        |
+| **`formatCurrency`**   | Convert any number to a formatted currency.                                     |
+| **`getQueryParams`**   | Parse query parameters from a URL into an object.                               |
+| **`cloneDeep`**        | Deeply clones an object or array, creating a new instance with the same values. |
+| **`isImageUrl`**       | Checks if a URL points to an image based on its file extension.                 |
+| **`toCamelCase`**      | Converts a string from kebab-case or snake_case to camelCase.                   |
+| **`objectToArray`**    | Converts an object to an array of its key-value pairs.                          |
+| **`getFileExtension`** | Extracts the file extension from a file path or URL.                            |
+| **`validEmail`**       | Validates if a given string is in a proper email format.                        |
 
 ## Examples
 
