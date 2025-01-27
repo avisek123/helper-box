@@ -475,3 +475,87 @@ export const formatBytes = (bytes: number, decimals: number = 2): string => {
   const i = Math.floor(Math.log(bytes) / Math.log(k));
   return parseFloat((bytes / Math.pow(k, i)).toFixed(dm)) + " " + sizes[i];
 };
+
+/**
+ * Converts a numeric duration value into a formatted string representing hours and minutes.
+ *
+ * @param durationValue - The duration value in hours (e.g., 1.5 for 1 hour and 30 minutes).
+ * @returns A string formatted as "Xh Ym" or "0h" if the duration is 0 or less.
+ *
+ * @example
+ * convertValueToHoursMinutesFormat(1.5); // "1h 30m"
+ * convertValueToHoursMinutesFormat(0);   // "0h"
+ * convertValueToHoursMinutesFormat(2.0); // "2h"
+ */
+export const convertValueToHoursMinutesFormat = (
+  durationValue: number
+): string => {
+  if (durationValue <= 0) return "0h";
+
+  const hours = Math.floor(durationValue);
+  let minutes = Math.round((durationValue - hours) * 60);
+
+  // Handle edge case where minutes == 60
+  if (minutes === 60) {
+    return `${hours + 1}h`;
+  }
+
+  const hoursPart = hours > 0 ? `${hours}h` : "";
+  const minutesPart = minutes > 0 ? `${minutes}m` : "";
+
+  return [hoursPart, minutesPart].filter(Boolean).join(" ").trim();
+};
+
+/**
+ * Converts total hours into a formatted string with days, hours, and minutes.
+ *
+ * @param totalHours - The total number of hours to convert.
+ * @returns A formatted string like "1 day 12 hours 30 minutes".
+ *
+ * @example
+ * convertHoursToDaysHoursMinutes(49.5); // "2 days 1 hour 30 minutes"
+ * convertHoursToDaysHoursMinutes(0);    // "0 hours"
+ * convertHoursToDaysHoursMinutes(25.5); // "1 day 1 hour 30 minutes"
+ */
+export const convertHoursToDaysHoursMinutes = (totalHours: number): string => {
+  if (totalHours <= 0) return "0 hours";
+
+  // Calculate days, hours, and minutes
+  const days = Math.floor(totalHours / 24);
+  const remainingHours = totalHours % 24;
+  const hours = Math.floor(remainingHours);
+  const minutes = Math.round((remainingHours - hours) * 60);
+
+  // Build the formatted string
+  const dayPart = days > 0 ? `${days} ${days === 1 ? "day" : "days"}` : "";
+  const hourPart =
+    hours > 0 ? `${hours} ${hours === 1 ? "hour" : "hours"}` : "";
+  const minutePart =
+    minutes > 0 ? `${minutes} ${minutes === 1 ? "minute" : "minutes"}` : "";
+
+  // Join the parts with spaces
+  return [dayPart, hourPart, minutePart].filter(Boolean).join(" ");
+};
+
+export const generateUUID = () => {
+  return "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g, function (c) {
+    const r = (Math.random() * 16) | 0,
+      v = c == "x" ? r : (r & 0x3) | 0x8;
+    return v.toString(16);
+  });
+};
+
+/**
+ * Converts HTML content into plain text by removing all HTML tags.
+ *
+ * @param htmlContent - The HTML string to convert.
+ * @returns A plain text string without any HTML tags.
+ *
+ * @example
+ * convertHtmlContentToPlainText("<p>Hello <strong>World</strong>!</p>");
+ * // "Hello World!"
+ */
+export const convertHtmlContentToPlainText = (htmlContent: string): string => {
+  const plainText = htmlContent.trim().replace(/<[^>]+>/g, "");
+  return plainText || "";
+};
