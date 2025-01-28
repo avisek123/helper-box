@@ -86,7 +86,7 @@ const users = [
   { id: 3, name: "Charlie", age: 35 },
 ];
 
-const usersObject = arrayToObject(users);
+const usersObject = arrayToObject(users, "id");
 
 console.log(usersObject);
 // Output:
